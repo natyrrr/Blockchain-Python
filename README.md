@@ -10,10 +10,14 @@ Creating blockchain with Python
 
 2. Clone the hd-wallet-derive tool into this folder and install it using the instructions on its README.md.
 
-a.
-b.
-c.
-d.
+ a. git clone https://github.com/dan-da/hd-wallet-derive
+ 
+ b. cd hd-wallet-derive
+ 
+ c. php -r "readfile('https://getcomposer.org/installer');" | php
+ 
+ d. php composer.phar install
+
 
 
 3. Create a symlink called derive for the hd-wallet-derive/hd-wallet-derive.php script into the top level project
