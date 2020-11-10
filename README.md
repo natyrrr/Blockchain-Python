@@ -31,11 +31,11 @@ instead of ./hd-wallet-derive/hd-wallet-derive.php.
 
 5. Create a file called wallet.py -- this will be your universal wallet script. You can use this starter code as a starting point.
 
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/cloning%20derive%20wallet.png)
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/cloning%20derive%20wallet%202.png)
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/cloning%20derive%20wallet%203.png)
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/cloning%20derive%20wallet%204.png)
+
 
 
 ## Setup constants
@@ -54,9 +54,12 @@ BTCTEST = 'btc-test'
 
 3.Use these anytime you reference these strings, both in function calls, and in setting object keys.
 
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/running%20wallet.py%20starter.png)
+
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/deriving%20wallet%20keys.png)
+
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/running%20wallet.py%202.png)
+
 
 ## Generate a Mnemonic
 
