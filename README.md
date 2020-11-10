@@ -94,7 +94,7 @@ Numderive (--numderive) to set number of child keys generated
 6. Create an object called coins that derives ETH and BTCTEST wallets with this function.
 When done properly, the final object should look something like this (there are only 3 children each in this image):
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/derive%20function.png)
 
 
 
@@ -172,7 +172,34 @@ For ETH, return w3.eth.sendRawTransaction(signed.rawTransaction)
 
 For BTCTEST, return NetworkAPI.broadcast_tx_testnet(signed)
 
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/prev%20key%20function.png)
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/sent%20tx%20function.png)
 
+
+## Send some transactions!
+Now, you should be able to fund these wallets using testnet faucets. Open up a new terminal window inside of wallet,
+then run python. Within the Python shell, run from wallet import * -- you can now access the functions interactively.
+You'll need to set the account with  priv_key_to_account and use send_tx to send transactions.
+
+Bitcoin Testnet transaction
+
+
+1. Fund a BTCTEST address using this testnet faucet.
+
+
+2. Use a block explorer to watch transactions on the address.
+
+
+3. Send a transaction to another testnet address (either one of your own, or the faucet's).
+
+
+
+
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/sending%20bitcoin%20testnet%20coins.png)
+
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
 
 
 
