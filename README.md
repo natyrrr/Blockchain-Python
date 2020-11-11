@@ -197,9 +197,42 @@ Bitcoin Testnet transaction
 
 ![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/sending%20bitcoin%20testnet%20coins.png)
 
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/received%20BTCTEST%20coin.png)
+
+## Local PoA Ethereum transaction
+
+
+1.Add one of the ETH addresses to the pre-allocated accounts in your networkname.json.
+
+
+2.Delete the geth folder in each node, then re-initialize using geth --datadir nodeX init networkname.json.
+This will create a new chain, and will pre-fund the new account.
+
+
+3. Add the following middleware
+to web3.py to support the PoA algorithm:
+
+
+from web3.middleware import geth_poa_middleware
+
+w3.middleware_onion.inject(geth_poa_middleware, layer=0)
+
+
+4.Due to a bug in web3.py, you will need to send a transaction or two with MyCrypto first, since the
+w3.eth.generateGasPrice() function does not work with an empty chain. You can use one of the ETH address privkey,
+or one of the node keystore files.
+
+
+5. Send a transaction from the pre-funded address within the wallet to another, then copy the txid into
+MyCrypto's TX Status, and screenshot the successful transaction like so:
+
+
+![alt text](https://github.com/natyrrr/Blockchain-Python/blob/main/screenshots/ETH%20TRANSACTION.png)
+
+
+
+
+# FIN!
 
 
 
